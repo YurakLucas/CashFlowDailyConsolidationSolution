@@ -45,6 +45,8 @@ CashFlowDailyConsolidationSolution/
 │   │   ├── appsettings.json
 │   │   └── launchSettings.json
 │   ├── DailyConsolidationService.API/
+│   │   ├── Authentication/
+│   │   │   └── BasicAuthenticationHandler.cs
 │   │   ├── Controllers/
 │   │   │   └── ConsolidationController.cs
 │   │   ├── Program.cs
@@ -110,9 +112,9 @@ Ajuste as portas conforme definido em seu launchSettings.json.
 ### 7. Autenticação
 
 Ao testar endpoints da API, inclua o header Authorization no formato Basic. Exemplo:
-
+```
 Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
-
+```
 Onde YWRtaW46cGFzc3dvcmQxMjM= é a representação Base64 de admin:password123.
 
 ### 8. Executar Testes
@@ -143,18 +145,18 @@ Exemplo de Payload:
 
 Requer Basic Auth.
 
-GET api/cashflow/transactions/{date}
+```GET api/cashflow/transactions/{date}```
 Lista todos os lançamentos para uma data específica.
-Exemplo: api/cashflow/transactions/2025-02-18
+Exemplo: ```api/cashflow/transactions/2025-02-18```
 Requer Basic Auth.
 
 ### DailyConsolidationService.API
 -----------------------------
 
-GET api/consolidation/report/{date}
+```GET api/consolidation/report/{date}```
 Gera um relatório consolidado de créditos, débitos e saldo do dia.
-Exemplo: api/consolidation/report/2025-02-18
-Requer Basic Auth (se configurado dessa forma).
+Exemplo: ```api/consolidation/report/2025-02-18```
+Requer Basic Auth.
 
 ### Evoluções Futuras
 -----------------
