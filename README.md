@@ -14,6 +14,7 @@ Ambos compartilham a camada de **Application** (DTOs e Interfaces), **Domain** (
 
 ## Estrutura do Projeto
 
+```
 CashFlowDailyConsolidationSolution/
 ├── CashFlowDailyConsolidationSolution.sln
 ├── src/
@@ -54,6 +55,7 @@ CashFlowDailyConsolidationSolution/
     │   └── CashFlowControllerTests.cs
     └── DailyConsolidationService.Tests/
         └── ConsolidationControllerTests.cs
+```
 
 ## Tecnologias Utilizadas
 
